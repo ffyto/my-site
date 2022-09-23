@@ -1,8 +1,7 @@
 import React from 'react';
 import { Global } from '@emotion/react';
 import { css, Themed } from 'theme-ui';
-
-// import Seo
+import Seo from './Seo';
 
 const Layout = ({ children, className }) => (
   <Themed.root>
@@ -34,7 +33,7 @@ const Layout = ({ children, className }) => (
         },
       })}
     />
-    {/* Seo Component */}
+    <Seo />
     <main className={className}>{children}</main>
   </Themed.root>
 );
